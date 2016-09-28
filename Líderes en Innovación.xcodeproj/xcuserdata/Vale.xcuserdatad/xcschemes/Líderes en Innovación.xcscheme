@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0800"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3B93B52C1D9B4CB300207D32"
+               BuildableName = "Li&#x301;deres en Innovacio&#x301;n.app"
+               BlueprintName = "Li&#x301;deres en Innovacio&#x301;n"
+               ReferencedContainer = "container:Li&#x301;deres en Innovacio&#x301;n.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3B93B5401D9B4CB500207D32"
+               BuildableName = "Li&#x301;deres en Innovacio&#x301;nTests.xctest"
+               BlueprintName = "Li&#x301;deres en Innovacio&#x301;nTests"
+               ReferencedContainer = "container:Li&#x301;deres en Innovacio&#x301;n.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3B93B54B1D9B4CB500207D32"
+               BuildableName = "Li&#x301;deres en Innovacio&#x301;nUITests.xctest"
+               BlueprintName = "Li&#x301;deres en Innovacio&#x301;nUITests"
+               ReferencedContainer = "container:Li&#x301;deres en Innovacio&#x301;n.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3B93B52C1D9B4CB300207D32"
+            BuildableName = "Li&#x301;deres en Innovacio&#x301;n.app"
+            BlueprintName = "Li&#x301;deres en Innovacio&#x301;n"
+            ReferencedContainer = "container:Li&#x301;deres en Innovacio&#x301;n.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3B93B52C1D9B4CB300207D32"
+            BuildableName = "Li&#x301;deres en Innovacio&#x301;n.app"
+            BlueprintName = "Li&#x301;deres en Innovacio&#x301;n"
+            ReferencedContainer = "container:Li&#x301;deres en Innovacio&#x301;n.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3B93B52C1D9B4CB300207D32"
+            BuildableName = "Li&#x301;deres en Innovacio&#x301;n.app"
+            BlueprintName = "Li&#x301;deres en Innovacio&#x301;n"
+            ReferencedContainer = "container:Li&#x301;deres en Innovacio&#x301;n.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
