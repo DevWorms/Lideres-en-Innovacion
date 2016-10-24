@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B74AF3B1DAF2FC200DCEB0B /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74AF3A1DAF2FC200DCEB0B /* SocialViewController.swift */; };
+		3B77D2121DB5AF3D00C41F1E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B77D2111DB5AF3D00C41F1E /* TableViewCell.swift */; };
 		3B93B5311D9B4CB300207D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93B5301D9B4CB300207D32 /* AppDelegate.swift */; };
 		3B93B5331D9B4CB300207D32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93B5321D9B4CB300207D32 /* ViewController.swift */; };
 		3B93B5361D9B4CB300207D32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B93B5341D9B4CB300207D32 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		3B93B53B1D9B4CB400207D32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B93B5391D9B4CB400207D32 /* LaunchScreen.storyboard */; };
 		3B93B5461D9B4CB500207D32 /* Li_deres_en_Innovacio_nTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93B5451D9B4CB500207D32 /* Li_deres_en_Innovacio_nTests.swift */; };
 		3B93B5511D9B4CB500207D32 /* Li_deres_en_Innovacio_nUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93B5501D9B4CB500207D32 /* Li_deres_en_Innovacio_nUITests.swift */; };
+		3BBBA8D21DB05185008CBFDB /* MenuAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBBA8D11DB05185008CBFDB /* MenuAgendaViewController.swift */; };
+		3BBBA8D41DB051A3008CBFDB /* AgendaDiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBBA8D31DB051A3008CBFDB /* AgendaDiaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B74AF3A1DAF2FC200DCEB0B /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		3B77D2111DB5AF3D00C41F1E /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3B93B52D1D9B4CB300207D32 /* Líderes en Innovación.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Líderes en Innovación.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B93B5301D9B4CB300207D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B93B5321D9B4CB300207D32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		3B93B54C1D9B4CB500207D32 /* Líderes en InnovaciónUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Líderes en InnovaciónUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B93B5501D9B4CB500207D32 /* Li_deres_en_Innovacio_nUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Li_deres_en_Innovacio_nUITests.swift; sourceTree = "<group>"; };
 		3B93B5521D9B4CB500207D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BBBA8D11DB05185008CBFDB /* MenuAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAgendaViewController.swift; sourceTree = "<group>"; };
+		3BBBA8D31DB051A3008CBFDB /* AgendaDiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaDiaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,13 @@
 		3B93B52F1D9B4CB300207D32 /* Líderes en Innovación */ = {
 			isa = PBXGroup;
 			children = (
+				3B74AF3A1DAF2FC200DCEB0B /* SocialViewController.swift */,
 				3B93B5301D9B4CB300207D32 /* AppDelegate.swift */,
 				3B93B5321D9B4CB300207D32 /* ViewController.swift */,
 				3B93B5341D9B4CB300207D32 /* Main.storyboard */,
+				3BBBA8D11DB05185008CBFDB /* MenuAgendaViewController.swift */,
+				3BBBA8D31DB051A3008CBFDB /* AgendaDiaViewController.swift */,
+				3B77D2111DB5AF3D00C41F1E /* TableViewCell.swift */,
 				3B93B5371D9B4CB400207D32 /* Assets.xcassets */,
 				3B93B5391D9B4CB400207D32 /* LaunchScreen.storyboard */,
 				3B93B53C1D9B4CB400207D32 /* Info.plist */,
@@ -193,6 +205,7 @@
 				TargetAttributes = {
 					3B93B52C1D9B4CB300207D32 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FN75477QMR;
 						ProvisioningStyle = Automatic;
 					};
 					3B93B5401D9B4CB500207D32 = {
@@ -259,6 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBBA8D41DB051A3008CBFDB /* AgendaDiaViewController.swift in Sources */,
+				3B74AF3B1DAF2FC200DCEB0B /* SocialViewController.swift in Sources */,
+				3BBBA8D21DB05185008CBFDB /* MenuAgendaViewController.swift in Sources */,
+				3B77D2121DB5AF3D00C41F1E /* TableViewCell.swift in Sources */,
 				3B93B5331D9B4CB300207D32 /* ViewController.swift in Sources */,
 				3B93B5311D9B4CB300207D32 /* AppDelegate.swift in Sources */,
 			);
@@ -410,7 +427,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FN75477QMR;
 				INFOPLIST_FILE = "Líderes en Innovación/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devworms.Li-deres-en-Innovacio-n";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +441,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FN75477QMR;
 				INFOPLIST_FILE = "Líderes en Innovación/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devworms.Li-deres-en-Innovacio-n";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +524,7 @@
 				3B93B5571D9B4CB500207D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B93B5581D9B4CB500207D32 /* Build configuration list for PBXNativeTarget "Líderes en InnovaciónTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +533,7 @@
 				3B93B55A1D9B4CB500207D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B93B55B1D9B4CB500207D32 /* Build configuration list for PBXNativeTarget "Líderes en InnovaciónUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +542,7 @@
 				3B93B55D1D9B4CB500207D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
