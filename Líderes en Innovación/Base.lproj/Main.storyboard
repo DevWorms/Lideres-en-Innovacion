@@ -47,7 +47,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ie0-Qe-R1X">
                         <barButtonItem key="backBarButtonItem" title="Mapa" id="kOQ-I1-fCY"/>
-                        <barButtonItem key="leftBarButtonItem" title="FAQ'S" id="GCW-kN-cuO">
+                        <barButtonItem key="leftBarButtonItem" image="ico_182" id="GCW-kN-cuO">
                             <connections>
                                 <segue destination="iHE-Ne-2GR" kind="show" id="q2f-vN-4IA"/>
                             </connections>
@@ -116,6 +116,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.87809327411167515" green="0.65465358846779498" blue="0.0075865358002129742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="cellEvento" rowHeight="105" id="NYq-0u-t0m" customClass="TableViewCell" customModule="Li_deres_en_Innovacio_n" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="105"/>
@@ -126,7 +127,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solo es una prueba para ver hasta donde aguanta y como aguanta este texto debido a todo lo que conlleva " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAt-El-pgF">
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.51706425519999999" green="0.86370900510000004" blue="0.75182867190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nX-PK-XAj">
@@ -134,7 +135,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="2ai-dd-3Pz"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.63646097715736039" green="0.095208713669707748" blue="0.0054988850626691167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5D2-kb-9um">
@@ -142,26 +143,14 @@
                                                 <constraint firstAttribute="width" constant="22" id="8bj-l2-JYj"/>
                                             </constraints>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1s-tX-JQZ">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1s-tX-JQZ">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="58" id="MOj-pJ-6fd"/>
                                             </constraints>
-                                            <attributedString key="attributedText">
-                                                <fragment>
-                                                    <string key="content">Agregar a
+                                            <string key="text">Agregar a
 calendario:</string>
-                                                    <attributes>
-                                                        <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="NSColor" red="0.11373" green="0.12941" blue="0.16078000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="10" name="Helvetica"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                        <color key="NSStrokeColor" red="0.11373" green="0.12941" blue="0.16078000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                                            <color key="textColor" red="0.51706425519999999" green="0.86370900510000004" blue="0.75182867190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -180,6 +169,7 @@ calendario:</string>
                                         <constraint firstItem="FAt-El-pgF" firstAttribute="top" secondItem="4Fw-OF-Nf9" secondAttribute="topMargin" constant="3" id="sWS-Px-sKH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="btnCalendario" destination="5D2-kb-9um" id="kYE-O2-xZT"/>
                                     <outlet property="textEvent" destination="FAt-El-pgF" id="G2P-e7-Scs"/>
@@ -287,7 +277,7 @@ calendario:</string>
                     </tableView>
                     <navigationItem key="navigationItem" id="2JG-Ba-PWg">
                         <barButtonItem key="backBarButtonItem" title="Agenda" id="NLl-eP-xgn"/>
-                        <barButtonItem key="leftBarButtonItem" title="FAQ'S" id="G1a-6V-4iE">
+                        <barButtonItem key="leftBarButtonItem" image="ico_182" id="G1a-6V-4iE">
                             <connections>
                                 <segue destination="iHE-Ne-2GR" kind="show" identifier="faqs" id="9TC-hj-CtR"/>
                             </connections>
@@ -356,7 +346,7 @@ calendario:</string>
                     </view>
                     <navigationItem key="navigationItem" id="jkR-Yh-9dg">
                         <barButtonItem key="backBarButtonItem" title="Social" id="hKg-8a-FeP"/>
-                        <barButtonItem key="leftBarButtonItem" title="FAQ'S" id="TXf-hA-4Zu">
+                        <barButtonItem key="leftBarButtonItem" image="ico_182" id="TXf-hA-4Zu">
                             <connections>
                                 <segue destination="iHE-Ne-2GR" kind="show" id="SuD-YR-W5i"/>
                             </connections>
@@ -400,7 +390,7 @@ calendario:</string>
         <scene sceneID="P9C-AI-FbH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Y1-00-KoC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Social" id="qOp-cw-2H4"/>
+                    <tabBarItem key="tabBarItem" title="Social" image="ico_55" id="qOp-cw-2H4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DiR-z2-W2a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -419,7 +409,7 @@ calendario:</string>
         <scene sceneID="f5F-Xf-a8j">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4LE-jH-Pop" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mapa" image="events" id="Fo3-3n-tX2"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="ico_15" id="Fo3-3n-tX2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dc2-Cc-YYo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -438,7 +428,7 @@ calendario:</string>
         <scene sceneID="0dE-4K-u4V">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eEQ-Uh-Xyk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Agenda" image="imprimir_IOS-2" id="336-yU-3gW"/>
+                    <tabBarItem key="tabBarItem" title="Agenda" image="ico_193" id="336-yU-3gW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oAm-cZ-f2K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -459,13 +449,15 @@ calendario:</string>
         </scene>
     </scenes>
     <resources>
-        <image name="events" width="40" height="40"/>
-        <image name="imprimir_IOS-2" width="40" height="40"/>
+        <image name="ico_15" width="25" height="33"/>
+        <image name="ico_182" width="35" height="35"/>
+        <image name="ico_193" width="35" height="35"/>
+        <image name="ico_55" width="35" height="35"/>
         <image name="mapa" width="1136" height="640"/>
         <image name="pantalla ELI" width="640" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="SuD-YR-W5i"/>
         <segue reference="v5c-qq-50X"/>
-        <segue reference="9TC-hj-CtR"/>
     </inferredMetricsTieBreakers>
 </document>

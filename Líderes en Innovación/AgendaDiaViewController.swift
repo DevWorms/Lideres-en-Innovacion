@@ -38,6 +38,8 @@ class AgendaDiaViewController: UITableViewController {
     
     func addEventToCalendar(title: String, description: String?, startDate: Date, endDate: Date) {
         
+        var message : String = ""
+        
         //alert con indicador
         let alertIndicador = UIAlertController(title: nil, message: "   Agregando evento a tu calendario...", preferredStyle: .alert)
         alertIndicador.view.tintColor = UIColor.black
@@ -68,25 +70,32 @@ class AgendaDiaViewController: UITableViewController {
                     try eventStore.save(event, span: .thisEvent)
                 } catch let e as NSError {
                     
-                    //completion?(false, e.localizedDescription)
+                    message = e.localizedDescription
+                    
                     return
                 }
                 
-                let alert = UIAlertView(title: "Calendario", message: "El evento se agregó satisfactoriamente.", delegate: nil, cancelButtonTitle: "OK")
-                alert.show()
+                message = "El evento se agregó satisfactoriamente."
                 
-                //self.dismiss(animated: false, completion: nil)
-                //alertIndicador.dismiss(animated: true, completion: nil)
-                //completion?(true, "El evento se agregó satisfactoriamente.")
             } else {
                 
                 if granted {
-                    //completion?(true, (error?.localizedDescription)!)
+                    message = (error?.localizedDescription)!
                 } else {
-                    //completion?(false, "No pudimos añadir este evento. Permite que Líderes en Innovación acceda a Calendarios.")
+                    message = "No pudimos añadir este evento. Permite que Líderes en Innovación acceda a Calendarios."
                 }
             }
+            
+            self.dismiss(animated: false, completion: nil)
+            
+            DispatchQueue.main.async {
+                let alert = UIAlertView(title: "Calendario", message: message, delegate: nil, cancelButtonTitle: "OK")
+                alert.show()
+            }
+
+
         })
+        
     }
     
     func event(sender: UIButton) {
@@ -94,7 +103,7 @@ class AgendaDiaViewController: UITableViewController {
         let alert = UIAlertController(title: "Notificar", message: "¿Deseas que agreguemos este evento a tu calendario?" , preferredStyle: UIAlertControllerStyle.alert)
                     
         alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "Si", style: .default, handler: { (UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "Si", style: .default, handler: { UIAlertAction in
             
             let fullHora    = self.horarios[ sender.tag ]
             let fullHoraArr = fullHora.components(separatedBy: " - ")
