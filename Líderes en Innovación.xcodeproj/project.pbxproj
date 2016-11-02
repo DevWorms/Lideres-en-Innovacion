@@ -12,12 +12,14 @@
 		3B93B5311D9B4CB300207D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93B5301D9B4CB300207D32 /* AppDelegate.swift */; };
 		3B93B5331D9B4CB300207D32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93B5321D9B4CB300207D32 /* ViewController.swift */; };
 		3B93B5361D9B4CB300207D32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B93B5341D9B4CB300207D32 /* Main.storyboard */; };
-		3B93B5381D9B4CB400207D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B93B5371D9B4CB400207D32 /* Assets.xcassets */; };
 		3B93B53B1D9B4CB400207D32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B93B5391D9B4CB400207D32 /* LaunchScreen.storyboard */; };
 		3B93B5461D9B4CB500207D32 /* Li_deres_en_Innovacio_nTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93B5451D9B4CB500207D32 /* Li_deres_en_Innovacio_nTests.swift */; };
 		3B93B5511D9B4CB500207D32 /* Li_deres_en_Innovacio_nUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93B5501D9B4CB500207D32 /* Li_deres_en_Innovacio_nUITests.swift */; };
 		3BBBA8D21DB05185008CBFDB /* MenuAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBBA8D11DB05185008CBFDB /* MenuAgendaViewController.swift */; };
 		3BBBA8D41DB051A3008CBFDB /* AgendaDiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBBA8D31DB051A3008CBFDB /* AgendaDiaViewController.swift */; };
+		3BD5E3541DCA72DF00C1E2C5 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5E3531DCA72DF00C1E2C5 /* InicioViewController.swift */; };
+		3BD5E3561DCA74BC00C1E2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD5E3551DCA74BC00C1E2C5 /* Assets.xcassets */; };
+		3BD5E3581DCA803B00C1E2C5 /* PreguntasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5E3571DCA803B00C1E2C5 /* PreguntasTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,6 @@
 		3B93B5301D9B4CB300207D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B93B5321D9B4CB300207D32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B93B5351D9B4CB300207D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3B93B5371D9B4CB400207D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B93B53A1D9B4CB400207D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B93B53C1D9B4CB400207D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B93B5411D9B4CB500207D32 /* Líderes en InnovaciónTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Líderes en InnovaciónTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +56,9 @@
 		3B93B5521D9B4CB500207D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BBBA8D11DB05185008CBFDB /* MenuAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAgendaViewController.swift; sourceTree = "<group>"; };
 		3BBBA8D31DB051A3008CBFDB /* AgendaDiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaDiaViewController.swift; sourceTree = "<group>"; };
+		3BD5E3531DCA72DF00C1E2C5 /* InicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
+		3BD5E3551DCA74BC00C1E2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BD5E3571DCA803B00C1E2C5 /* PreguntasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreguntasTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +112,14 @@
 				3B74AF3A1DAF2FC200DCEB0B /* SocialViewController.swift */,
 				3B93B5301D9B4CB300207D32 /* AppDelegate.swift */,
 				3B93B5321D9B4CB300207D32 /* ViewController.swift */,
+				3BD5E3531DCA72DF00C1E2C5 /* InicioViewController.swift */,
+				3BD5E3571DCA803B00C1E2C5 /* PreguntasTableViewController.swift */,
 				3B93B5341D9B4CB300207D32 /* Main.storyboard */,
 				3BBBA8D11DB05185008CBFDB /* MenuAgendaViewController.swift */,
 				3BBBA8D31DB051A3008CBFDB /* AgendaDiaViewController.swift */,
 				3B77D2111DB5AF3D00C41F1E /* TableViewCell.swift */,
-				3B93B5371D9B4CB400207D32 /* Assets.xcassets */,
 				3B93B5391D9B4CB400207D32 /* LaunchScreen.storyboard */,
+				3BD5E3551DCA74BC00C1E2C5 /* Assets.xcassets */,
 				3B93B53C1D9B4CB400207D32 /* Info.plist */,
 			);
 			path = "Líderes en Innovación";
@@ -200,7 +206,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Emmanuel Valentín Granados López";
 				TargetAttributes = {
 					3B93B52C1D9B4CB300207D32 = {
@@ -246,7 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B93B53B1D9B4CB400207D32 /* LaunchScreen.storyboard in Resources */,
-				3B93B5381D9B4CB400207D32 /* Assets.xcassets in Resources */,
+				3BD5E3561DCA74BC00C1E2C5 /* Assets.xcassets in Resources */,
 				3B93B5361D9B4CB300207D32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BBBA8D41DB051A3008CBFDB /* AgendaDiaViewController.swift in Sources */,
+				3BD5E3581DCA803B00C1E2C5 /* PreguntasTableViewController.swift in Sources */,
 				3B74AF3B1DAF2FC200DCEB0B /* SocialViewController.swift in Sources */,
+				3BD5E3541DCA72DF00C1E2C5 /* InicioViewController.swift in Sources */,
 				3BBBA8D21DB05185008CBFDB /* MenuAgendaViewController.swift in Sources */,
 				3B77D2121DB5AF3D00C41F1E /* TableViewCell.swift in Sources */,
 				3B93B5331D9B4CB300207D32 /* ViewController.swift in Sources */,
@@ -350,6 +358,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -399,6 +408,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

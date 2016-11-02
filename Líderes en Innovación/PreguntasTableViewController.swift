@@ -1,14 +1,14 @@
 //
-//  MenuAgendaViewController.swift
+//  PreguntasTableViewController.swift
 //  Líderes en Innovación
 //
-//  Created by Emmanuel Valentín Granados López on 13/10/16.
+//  Created by Emmanuel Valentín Granados López on 02/11/16.
 //  Copyright © 2016 Emmanuel Valentín Granados López. All rights reserved.
 //
 
 import UIKit
 
-class MenuAgendaViewController: UITableViewController {
+class PreguntasTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,18 +34,24 @@ class MenuAgendaViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 2
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellRespuesta", for: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        //https://www.ralfebert.de/tutorials/ios-swift-uitableviewcontroller/
+        
+        return "Section \(section)"
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -82,24 +88,14 @@ class MenuAgendaViewController: UITableViewController {
     }
     */
 
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if segue.identifier != "faqs" && segue.identifier != "questions" {
-            let agendaDiaVC = segue.destination as! AgendaDiaViewController
-            
-            if segue.identifier == "FirstSegue" {
-                agendaDiaVC.tagMenu = 0
-            } else if segue.identifier == "SecondSegue" {
-                agendaDiaVC.tagMenu = 1
-            } else if segue.identifier == "ThirdSegue" {
-                agendaDiaVC.tagMenu = 2
-            }
-        }
     }
-    
+    */
+
 }
