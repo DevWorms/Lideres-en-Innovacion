@@ -60,7 +60,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="ico_134" id="AI2-kg-0L9">
                             <connections>
-                                <segue destination="bgG-Yd-aea" kind="show" id="NTw-vs-ahb"/>
+                                <segue destination="uRA-pC-sMY" kind="show" id="NTw-vs-ahb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -301,7 +301,7 @@ calendario:</string>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="ico_134" id="iVb-ka-DSn">
                             <connections>
-                                <segue destination="bgG-Yd-aea" kind="show" identifier="questions" id="K4f-5Q-nib"/>
+                                <segue destination="uRA-pC-sMY" kind="show" identifier="questions" id="K4f-5Q-nib"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -332,7 +332,7 @@ calendario:</string>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="ico_134" id="sbJ-E7-XdG">
                             <connections>
-                                <segue destination="bgG-Yd-aea" kind="show" id="Ktn-rw-DzH"/>
+                                <segue destination="uRA-pC-sMY" kind="presentation" id="Ktn-rw-DzH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -341,22 +341,34 @@ calendario:</string>
             </objects>
             <point key="canvasLocation" x="1572" y="-156"/>
         </scene>
-        <!--Preguntas-->
+        <!--Preguntas Table View Controller-->
         <scene sceneID="f3j-1q-TXb">
             <objects>
                 <tableViewController id="bgG-Yd-aea" customClass="PreguntasTableViewController" customModule="Li_deres_en_Innovacio_n" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Eb8-at-6MN">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="70" sectionHeaderHeight="18" sectionFooterHeight="18" id="Eb8-at-6MN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRespuesta" id="fju-tF-ybe">
-                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRespuesta" rowHeight="70" id="fju-tF-ybe">
+                                <rect key="frame" x="0.0" y="56" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fju-tF-ybe" id="5PP-hJ-Qgb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uT-5B-5Pe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="bgG-Yd-aea" kind="show" identifier="bucle" id="HHi-Q2-eER"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -365,11 +377,19 @@ calendario:</string>
                             <outlet property="delegate" destination="bgG-Yd-aea" id="oTK-dT-9do"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Preguntas" id="dX6-mK-c6H"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="o8O-o6-Jqu">
+                        <barButtonItem key="leftBarButtonItem" image="close" id="6V9-6o-4fR">
+                            <connections>
+                                <action selector="close:" destination="bgG-Yd-aea" id="27M-HR-XY7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngP-Kt-BqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2357.5999999999999" y="302.6986506746627"/>
+            <point key="canvasLocation" x="3192.8000000000002" y="302.6986506746627"/>
         </scene>
         <!--twitter-->
         <scene sceneID="EWS-rz-3No">
@@ -438,7 +458,7 @@ calendario:</string>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="ico_134" id="ybs-cq-Bor">
                             <connections>
-                                <segue destination="bgG-Yd-aea" kind="show" id="8vF-WT-2V1"/>
+                                <segue destination="uRA-pC-sMY" kind="show" id="8vF-WT-2V1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -556,8 +576,27 @@ calendario:</string>
             </objects>
             <point key="canvasLocation" x="633" y="-156"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fwu-Pw-hpj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uRA-pC-sMY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z4Z-GX-E03">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bgG-Yd-aea" kind="relationship" relationship="rootViewController" id="OVM-hV-Jns"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83k-CP-za4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.5999999999999" y="302.6986506746627"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="close" width="24" height="24"/>
         <image name="ico_110" width="24" height="24"/>
         <image name="ico_134" width="24" height="24"/>
         <image name="ico_182" width="24" height="24"/>
@@ -568,8 +607,9 @@ calendario:</string>
         <image name="twitter" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="OVM-hV-Jns"/>
         <segue reference="NTw-vs-ahb"/>
         <segue reference="v5c-qq-50X"/>
-        <segue reference="q2f-vN-4IA"/>
+        <segue reference="Jlc-2q-Tgb"/>
     </inferredMetricsTieBreakers>
 </document>
