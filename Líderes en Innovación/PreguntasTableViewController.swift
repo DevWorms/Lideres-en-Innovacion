@@ -11,6 +11,7 @@ import UIKit
 class PreguntasTableViewController: UITableViewController {
     
     var task : URLSessionDataTask?
+    var idPregunta = ""
     var pregunta = ""
     var respuesta1 = ""
     var respuesta2 = ""
@@ -20,11 +21,15 @@ class PreguntasTableViewController: UITableViewController {
     var numGlobal = 0
     var siempreUno = 0
 
+    @IBOutlet weak var respLbl1: UILabel!
+    @IBOutlet weak var respLbl2: UILabel!
+    @IBOutlet weak var respLbl3: UILabel!
+    @IBOutlet weak var respLbl4: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        print("inicia numGlobal: \(self.numGlobal)")
+        //print("inicia numGlobal: \(self.numGlobal)")
         
         let request = NSMutableURLRequest(url: NSURL(string: "http://luisdiazapps.com/Projects/Tech/preguntas_JSON.php")! as URL)
         request.httpMethod = "GET"
@@ -52,6 +57,10 @@ class PreguntasTableViewController: UITableViewController {
                         if let dictionary = jsonWithObjectRoot[ self.numGlobal ] as? [String: String] {
                         
                             //print(dictionary)
+                            
+                            if let idPreg = dictionary["id_pregunta"] {
+                                self.idPregunta = idPreg
+                            }
                         
                             if let preg = dictionary["pregunta"] {
                                 self.pregunta = preg
@@ -87,6 +96,10 @@ class PreguntasTableViewController: UITableViewController {
                 
             }
             
+            self.respLbl1.text = self.respuesta1
+            self.respLbl2.text = self.respuesta2
+            self.respLbl3.text = self.respuesta3
+            self.respLbl4.text = self.respuesta4
             self.siempreUno = 1
             self.tableView.reloadData()
             
@@ -94,7 +107,7 @@ class PreguntasTableViewController: UITableViewController {
         self.task!.resume()
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -112,20 +125,74 @@ class PreguntasTableViewController: UITableViewController {
         return 4
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellRespuesta", for: indexPath)
-
-        let resp1 = cell.viewWithTag(1) as! UILabel
-        resp1.text = self.respuesta1
+        let cell = tableView.dequeueReusableCell(withIdentifier: "identifierCell", for: indexPath)
 
         return cell
     }
+     */
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         //https://www.ralfebert.de/tutorials/ios-swift-uitableviewcontroller/
         
         return self.pregunta
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let headerView = view as! UITableViewHeaderFooterView
+        headerView.textLabel?.text = self.pregunta
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.row {
+        case 0:
+            self.httpPOST(respuesta: "A")
+        case 1:
+            self.httpPOST(respuesta: "B")
+        case 2:
+            self.httpPOST(respuesta: "C")
+        case 3:
+            self.httpPOST(respuesta: "D")
+        default: break
+        }
+    }
+    
+    private func httpPOST(respuesta: String) {
+        
+        let headers = [
+            "content-type": "application/x-www-form-urlencoded"
+        ]
+        
+        let postData = NSMutableData(data: ("pregunta=" + self.idPregunta ).data(using: String.Encoding.utf8)!)
+        postData.append( ("&respuesta=" + respuesta ).data(using: String.Encoding.utf8)!)
+        
+        let request = NSMutableURLRequest(url: NSURL(string: "http://luisdiazapps.com/Projects/Tech/answers_JSON.php")! as URL,
+                                          cachePolicy: .useProtocolCachePolicy,
+                                          timeoutInterval: 10.0)
+        request.httpMethod = "POST"
+        request.allHTTPHeaderFields = headers
+        request.httpBody = postData as Data
+        
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            
+            print("hola 00")
+            
+            if (error != nil) {
+                print(error!)
+            } else {
+                let httpResponse = response as? HTTPURLResponse
+                print(httpResponse!)
+            }
+            
+            self.performSegue(withIdentifier: "", sender: nil)
+            
+        })
+        
+        dataTask.resume()
     }
     
 
@@ -142,6 +209,8 @@ class PreguntasTableViewController: UITableViewController {
                 self.dismiss(animated: true, completion: nil)
             }
             
+            print("hola 0")
+            
             // pass data to destinationViewController
             destinationViewController.numGlobal = self.numGlobal + 1
         }
@@ -149,6 +218,8 @@ class PreguntasTableViewController: UITableViewController {
     
     // cancela o deja asar el segue
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        print("hola 1")
+        
         return true
     }
     
