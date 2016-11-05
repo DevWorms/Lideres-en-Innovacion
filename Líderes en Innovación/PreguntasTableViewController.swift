@@ -96,12 +96,14 @@ class PreguntasTableViewController: UITableViewController {
                 
             }
             
-            self.respLbl1.text = self.respuesta1
-            self.respLbl2.text = self.respuesta2
-            self.respLbl3.text = self.respuesta3
-            self.respLbl4.text = self.respuesta4
-            self.siempreUno = 1
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.respLbl1.text = self.respuesta1
+                self.respLbl2.text = self.respuesta2
+                self.respLbl3.text = self.respuesta3
+                self.respLbl4.text = self.respuesta4
+                self.siempreUno = 1
+                self.tableView.reloadData()
+            }
             
         }
         self.task!.resume()
@@ -162,6 +164,20 @@ class PreguntasTableViewController: UITableViewController {
     
     private func httpPOST(respuesta: String) {
         
+        
+        //alert con indicador
+        let alertIndicador = UIAlertController(title: nil, message: "   Validando...", preferredStyle: .alert)
+        alertIndicador.view.tintColor = UIColor.black
+        
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.startAnimating();
+        
+        alertIndicador.view.addSubview(loadingIndicator)
+        self.present(alertIndicador, animated: true, completion: nil)
+        //
+        
         let headers = [
             "content-type": "application/x-www-form-urlencoded"
         ]
@@ -179,16 +195,25 @@ class PreguntasTableViewController: UITableViewController {
         let session = URLSession.shared
         let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
             
-            print("hola 00")
-            
             if (error != nil) {
                 print(error!)
+                
+                DispatchQueue.main.async {
+                    alertIndicador.dismiss(animated: false, completion: nil)
+                }
+                
             } else {
+                
                 let httpResponse = response as? HTTPURLResponse
                 print(httpResponse!)
+                
+                DispatchQueue.main.async {
+                    
+                    alertIndicador.dismiss(animated: true, completion: {
+                        self.performSegue(withIdentifier: "bucle", sender: nil)
+                    })
+                }
             }
-            
-            self.performSegue(withIdentifier: "", sender: nil)
             
         })
         
@@ -209,8 +234,6 @@ class PreguntasTableViewController: UITableViewController {
                 self.dismiss(animated: true, completion: nil)
             }
             
-            print("hola 0")
-            
             // pass data to destinationViewController
             destinationViewController.numGlobal = self.numGlobal + 1
         }
@@ -218,7 +241,6 @@ class PreguntasTableViewController: UITableViewController {
     
     // cancela o deja asar el segue
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        print("hola 1")
         
         return true
     }
