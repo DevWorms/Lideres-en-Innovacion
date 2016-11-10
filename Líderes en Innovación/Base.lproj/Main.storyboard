@@ -223,7 +223,7 @@ calendario:</string>
                             <tableViewSection headerTitle="16 noviembre 2016" id="sOv-0u-suH">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="dCB-r1-ZdZ">
-                                        <rect key="frame" x="0.0" y="160" width="375" height="48"/>
+                                        <rect key="frame" x="0.0" y="161" width="375" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dCB-r1-ZdZ" id="wGf-JR-eBa">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="47"/>
@@ -247,7 +247,7 @@ calendario:</string>
                             <tableViewSection headerTitle="17 noviembre 2016" id="DpW-mj-S4O">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="dD0-vK-xkd">
-                                        <rect key="frame" x="0.0" y="264" width="375" height="48"/>
+                                        <rect key="frame" x="0.0" y="266" width="375" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dD0-vK-xkd" id="6lS-2z-Xs7">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="47"/>
@@ -303,7 +303,18 @@ calendario:</string>
                     <view key="view" contentMode="scaleToFill" id="QcM-Te-KaO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post-2" translatesAutoresizingMaskIntoConstraints="NO" id="oNz-MA-yAg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oNz-MA-yAg" firstAttribute="top" secondItem="RjU-fD-TrA" secondAttribute="bottom" id="QCz-Lo-ZAp"/>
+                            <constraint firstItem="19k-FK-WxP" firstAttribute="top" secondItem="oNz-MA-yAg" secondAttribute="bottom" id="RW4-M7-9vz"/>
+                            <constraint firstItem="oNz-MA-yAg" firstAttribute="leading" secondItem="QcM-Te-KaO" secondAttribute="leading" id="ZqB-DN-mqH"/>
+                            <constraint firstAttribute="trailing" secondItem="oNz-MA-yAg" secondAttribute="trailing" id="yfZ-oh-txy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xyl-Fk-ZcR">
                         <barButtonItem key="backBarButtonItem" title="Inicio" id="bHI-BJ-r8J"/>
@@ -321,7 +332,7 @@ calendario:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wu1-D6-lxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="-156"/>
+            <point key="canvasLocation" x="1572" y="-156.07196401799101"/>
         </scene>
         <!--Preguntas Table View Controller-->
         <scene sceneID="f3j-1q-TXb">
@@ -338,7 +349,7 @@ calendario:</string>
                                         <rect key="frame" x="0.0" y="35" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fju-tF-ybe" id="5PP-hJ-Qgb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="webos por mil hijos de toda su re pinche puta madre de mierda que los pario como ven pendejos vayanse al culo bola de putitas" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uT-5B-5Pe">
@@ -355,7 +366,7 @@ calendario:</string>
                                         <rect key="frame" x="0.0" y="105" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tR9-2C-T6z" id="vau-7l-mBw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="webos por mil hijos de toda su re pinche puta madre de mierda que los pario como ven pendejos vayanse al culo bola de putitas" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2Y-r4-hFK">
@@ -372,7 +383,7 @@ calendario:</string>
                                         <rect key="frame" x="0.0" y="175" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ytS-Kq-OqH" id="eVW-NQ-ZMH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="webos por mil hijos de toda su re pinche puta madre de mierda que los pario como ven pendejos vayanse al culo bola de putitas" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8j-Cx-AcC">
@@ -389,7 +400,7 @@ calendario:</string>
                                         <rect key="frame" x="0.0" y="245" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YiG-H8-haj" id="buq-ua-app">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="webos por mil hijos de toda su re pinche puta madre de mierda que los pario como ven pendejos vayanse al culo bola de putitas" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DP-Pi-Kqe">
@@ -648,12 +659,13 @@ calendario:</string>
         <image name="map" width="24" height="24"/>
         <image name="mapa" width="640" height="960"/>
         <image name="pantalla ELI" width="640" height="960"/>
+        <image name="post-2" width="640" height="960"/>
         <image name="twitter" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9TC-hj-CtR"/>
-        <segue reference="K4f-5Q-nib"/>
         <segue reference="v5c-qq-50X"/>
+        <segue reference="Jlc-2q-Tgb"/>
+        <segue reference="Ktn-rw-DzH"/>
         <segue reference="OVM-hV-Jns"/>
     </inferredMetricsTieBreakers>
 </document>
